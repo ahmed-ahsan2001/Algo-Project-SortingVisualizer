@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <!-- linking style.css -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <!-- body -->
+  <body>
+    <section class="head">7.4.5</section>
+    <section class="data-container"></section>
+    <section id="ele"></section>
+    <div style="margin: auto; width: fit-content">
+      <!-- "Generate New Array" button -->
+      <button class="btn1" onclick="generate()" id="Button1">
+        Generate New Array
+      </button>
+
+      <!-- "Insertion Sort" button -->
+      <button class="btn2" onclick="InsertionSort(),disable()" id="Button2">
+        Sort
+      </button>
+    </div>
+    <div id="myModal" class="modal">
+        <p>Worst Case Time Complexity = O(N^2)</p>
+        <p>Average Case Time Complexity = O(N^2)</p>
+        <p>Best Case Time Complexity = O(N)</p>
+        <p>Space Complexity = O(1)</p>
+      </div>
+    </div>
+  </body>
+
+  <!-- linking index.js -->
+  <script src="../insertionsort/index.js"></script>
+</html>

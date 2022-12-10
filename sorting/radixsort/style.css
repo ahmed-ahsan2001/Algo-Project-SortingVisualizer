@@ -1,0 +1,151 @@
+* {
+  font-family: sans-serif;
+  font-weight: 600;
+  background-color: blueviolet;
+}
+
+body {
+  margin: 0;
+  background-color: blueviolet;
+}
+
+.order,
+.nav p {
+  display: inline;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 0 0 0 30px;
+}
+
+.active,
+.nav p:hover {
+  color: #323220;
+  text-decoration: underline;
+}
+
+.nav {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background-color: hsl(206, 27%, 61%);
+}
+
+.nav p:nth-of-type(1) {
+  padding-right: 30px;
+  border-right: 2px solid black;
+}
+
+.content {
+  text-align: center;
+}
+
+#can0 {
+  display: block;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: lightblue;
+  margin: auto;
+}
+
+.btn {
+  display: inline;
+  font-size: 28px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 10px 10px 0;
+}
+
+#btn1 {
+  padding: 10px 25px 10px 25px;
+}
+
+.pulse {
+  animation: pulse 0.3s infinite;
+}
+
+#rainbowSelect {
+  display: inline-block;
+  padding: 9px 9px 9px 9px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #0ee20e;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #00cc00;
+  cursor: pointer;
+}
+
+.slider:nth-of-type(1) {
+  margin-right: 25px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.sizeNspeed {
+  display: inline-block;
+}
+
+.sizeNspeed:nth-of-type(3) {
+  margin-left: 15px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}

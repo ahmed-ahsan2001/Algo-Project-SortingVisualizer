@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Radix Sort</title>
+  </head>
+  <body>
+    <div class="nav">
+      <p
+        onclick="arraySizeSilder(document.getElementsByClassName('slider')[0].value)"
+      >
+        Generate New Array
+      </p>
+
+      <p onclick="changeAlgorithm(4)" class="order active">RadixSort</p>
+    </div>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <div class="content">
+      <canvas id="can0" width="1080" height="520"></canvas>
+
+      <p onclick="turnOnOff(true)" class="btn" id="btn1">
+        <i class="fa fa-play" id="playToggler"></i>
+      </p>
+
+      <p class="sizeNspeed">Speed:</p>
+    </div>
+    <div id="myModal" class="modal">
+      <p>Worst Case Time Complexity = O(N*K)</p>
+      <p>Average Case Time Complexity = O(N*K)</p>
+      <p>Best Case Time Complexity = O(N*K)</p>
+      <p>Space Complexity = O(N+K)</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="mainScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        background-image: url("images/image1.jpg");
+      }
+      img {
+        float: left;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+      }
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      /* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* The expanding image container */
+      .container {
+        position: relative;
+        display: none;
+      }
+
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h2 style="color: white">Types of Sorting Gallery</h2>
+    </div>
+    <form action="/sorting1.html">
+      <label for="myfile" style="color: white"
+        >Select a file to choose the input numbers</label
+      >
+      <input type="file" id="myfile" name="myfile" /><br /><br />
+    </form>
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <a href="sorting/bubblesort/index.html">
+          <img
+            src="images/bubblesort.png"
+            alt="bubblesort"
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <a href="sorting/insertionsort/index.html">
+          <img src="images/insertionsort.png" alt="Snow" style="width: 100%" />
+        </a>
+      </div>
+      <div class="column">
+        <a href="sorting/mergesort/index.html">
+          <img
+            src="images/mergesort.png"
+            alt="merge sort"
+            style="width: 100%"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <a href="sorting/heapsort/index.html">
+          <img
+            src="heapsort.png"
+            alt="heapsort"
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <a href="sorting/quicksort/index.html">
+          <img
+            src="images/quicksort.jpg"
+            alt="quicksort"
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <a href="sorting/radixsort/index.html">
+          <img src="images/Radixsort.jpg" alt="Snow" style="width: 100%" />
+        </a>
+      </div>
+      <div class="column">
+        <a href="sorting/bucketsort/index.html">
+          <img
+            src="images/Bucket-Sort.jpg"
+            alt="merge sort"
+            style="width: 100%"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <a href="sorting/countingsort/index.html">
+          <img
+            src="images/countingsort.jpg"
+            alt="heapsort"
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column"></div>
+      <div class="column">
+        <a href="sorting/7.4.5/index.html">
+          <img src="images/7.4.5.png" alt="Snow" style="width: 100%" />
+        </a>
+      </div>
+      <div class="column">
+        <a href="sorting/8.1.4/index.html">
+          <img src="images/8.1.4.png" alt="merge sort" style="width: 100%" />
+        </a>
+      </div>
+      <div class="column"></div>
+    </div>
+  </body>
+</html>

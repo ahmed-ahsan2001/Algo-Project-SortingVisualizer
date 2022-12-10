@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Quick Sort</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: blueviolet;
+      }
+      .header {
+        font-size: 30px;
+        text-align: center;
+      }
+      #array {
+        background-color: lightblue;
+        height: 500px;
+        width: 1500px;
+        margin: auto;
+        position: relative;
+        margin-top: 90px;
+      }
+      .block {
+        width: 20px;
+        background-color: blue;
+        position: absolute;
+        bottom: 0px;
+        transition: 0.2s all ease;
+      }
+      .block_id {
+        position: absolute;
+        color: black;
+        margin-top: -20px;
+        width: 100%;
+        text-align: center;
+      }
+      .block_id2 {
+        position: absolute;
+        color: black;
+        margin-top: 22px;
+        width: 100%;
+        text-align: center;
+      }
+      .block2 {
+        width: 28px;
+        background-color: rgb(255, 116, 116);
+        position: absolute;
+        transition: 0.2s all ease;
+      }
+      .block_id3 {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        margin-top: 1px;
+        width: 100%;
+        text-align: center;
+      }
+      #count {
+        height: 60px;
+        width: 1500px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <p class="header">Quick Sort</p>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <div id="array"></div>
+    <div id="count"></div>
+    <br />
+    <h2 class="range" style="text-align: center"></h2>
+    <div id="myModal" class="modal">
+      <p>Worst Case Time Complexity = O(N^2)</p>
+      <p>Average Case Time Complexity = O(N*log(N))</p>
+      <p>Best Case Time Complexity = O(N*log(N))</p>
+      <p>Space Complexity = O(N)</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
